@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-27T10:00:00Z",
+  "categories": [
+    { "id": "apps", "name": "تطبيقات" },
+    { "id": "games", "name": "ألعاب" },
+    { "id": "dev", "name": "نسخ المطورين" }
+  ],
+  "apps": [
+    {
+      "packageName": "org.example.notes",
+      "name": "Notes",
+      "developer": "Example Dev",
+      "category": "apps",
+      "versionCode": 12,
+      "versionName": "1.4.0",
+      "minSdk": 24,
+      "sizeBytes": 8421376,
+      "iconUrl": "https://example.com/icons/notes.png",
+      "screenshots": [
+        "https://example.com/shots/notes1.jpg",
+        "https://example.com/shots/notes2.jpg"
+      ],
+      "description": "تطبيق ملاحظات بسيط وسريع.",
+      "whatsNew": "إصلاحات وتحسينات في الأداء.",
+      "updatedAt": "2026-11-20",
+      "apk": {
+        "type": "apk",
+        "url": "https://example.com/apks/notes-12.apk",
+        "sha256": "REPLACE_WITH_REAL_SHA256",
+        "signatureSha256": "REPLACE_WITH_REAL_SIGNATURE_SHA256"
+      }
+    },
+    {
+      "packageName": "org.example.puzzle",
+      "name": "Puzzle Game",
+      "developer": "Example Studio",
+      "category": "games",
+      "versionCode": 5,
+      "versionName": "2.1.0",
+      "minSdk": 24,
+      "sizeBytes": 52428800,
+      "iconUrl": "https://example.com/icons/puzzle.png",
+      "screenshots": [
+        "https://example.com/shots/puzzle1.jpg"
+      ],
+      "description": "لعبة ألغاز خفيفة تعمل بدون إنترنت.",
+      "whatsNew": "مستويات جديدة.",
+      "updatedAt": "2026-11-25",
+      "apk": {
+        "type": "apk",
+        "url": "https://example.com/apks/puzzle-5.apk",
+        "sha256": "REPLACE_WITH_REAL_SHA256",
+        "signatureSha256": "REPLACE_WITH_REAL_SIGNATURE_SHA256"
+      }
+    }
+  ]
+}
