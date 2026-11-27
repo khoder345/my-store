@@ -11,6 +11,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.example.store.ui.screens.CategoriesScreen
 import com.example.store.ui.screens.HomeScreen
 
 object Routes {
@@ -42,7 +43,7 @@ fun AppNav(
             )
         }
         composable(Routes.GAMES) { PlaceholderScreen("الألعاب") }
-        composable(Routes.CATEGORIES) { PlaceholderScreen("الفئات") }
+        composable(Routes.CATEGORIES) { CategoriesScreen() }
         composable(Routes.DOWNLOADS) { PlaceholderScreen("التنزيلات") }
         composable(Routes.SETTINGS) { PlaceholderScreen("الإعدادات") }
         composable(Routes.APPS) { PlaceholderScreen("التطبيقات") }
