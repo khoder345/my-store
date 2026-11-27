@@ -9,6 +9,8 @@
         tools:ignore="QueryAllPackagesPermission" />
 
     <application
+        android:icon="@drawable/logo"
+        android:roundIcon="@drawable/logo"
         android:label="App Store"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.Light.NoActionBar">
