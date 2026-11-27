@@ -11,6 +11,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.example.store.ui.screens.HomeScreen
 
 object Routes {
     const val HOME = "home"
@@ -34,7 +35,12 @@ fun AppNav(
         startDestination = Routes.HOME,
         modifier = modifier
     ) {
-        composable(Routes.HOME) { PlaceholderScreen("الرئيسية") }
+        composable(Routes.HOME) {
+            HomeScreen(
+                onOpenApps = { navController.navigate(Routes.APPS) },
+                onOpenGames = { navController.navigate(Routes.GAMES) }
+            )
+        }
         composable(Routes.GAMES) { PlaceholderScreen("الألعاب") }
         composable(Routes.CATEGORIES) { PlaceholderScreen("الفئات") }
         composable(Routes.DOWNLOADS) { PlaceholderScreen("التنزيلات") }
